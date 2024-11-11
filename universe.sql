@@ -309,6 +309,9 @@ INSERT INTO public.moon VALUES (20, 'Styx', 12, true, 16.00, false);
 -- Data for Name: other_table; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.other_table VALUES (1, 'Item1', 'This is the first item', 1, true);
+INSERT INTO public.other_table VALUES (2, 'Item2', 'This is the second item', 2, true);
+INSERT INTO public.other_table VALUES (3, 'Item3', 'This is the third item', 3, false);
 
 
 --
@@ -359,7 +362,7 @@ SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
 -- Name: other_table_other_table_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.other_table_other_table_id_seq', 1, false);
+SELECT pg_catalog.setval('public.other_table_other_table_id_seq', 3, true);
 
 
 --
